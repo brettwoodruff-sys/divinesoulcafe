@@ -191,3 +191,8 @@ footer p.mission{font-family:'Fraunces';font-style:italic;color:rgba(255,255,255
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}.reveal{opacity:1;transform:none}}
+
+.circles-grid{display:grid;gap:16px;margin-top:44px;grid-template-columns:1fr}
+@media(min-width:560px){.circles-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.circles-grid{grid-template-columns:repeat(3,1fr)}}
+.circle-soon{display:inline-block;margin-top:12px;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);border:1px solid rgba(255,122,89,.45);border-radius:100px;padding:4px 11px}
